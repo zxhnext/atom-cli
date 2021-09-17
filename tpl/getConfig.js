@@ -1,7 +1,7 @@
 module.exports = function ({
-    name,
-    templateName,
-    author,
+    name, // 项目名
+    templateName, // 模版中文名
+    author, // 作者
     projectType,
     nameSpace,
     repoUrl

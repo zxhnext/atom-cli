@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const program = require('commander');
 const initial = require('../command/initial');
-const generate = require('../command/generator'); // 生成atom模版
+const generate = require('../command/generator');
 const release = require('../command/release');
 const releaseCo = require('../command/releaseCo');
 
@@ -16,7 +16,7 @@ if (fs.existsSync(path.resolve('atom.config.js'))) {
     config = require(path.resolve('atom.config.js'));
 }
 
-// 初始化
+// 初始化配置
 program
     .version(pkg.version, '-v, --version')
     .command('init')
